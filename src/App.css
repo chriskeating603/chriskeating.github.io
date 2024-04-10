@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: black;
   color: white;
   padding: 20px 0; /* Add some padding to the header */
   min-height: 1vh;
@@ -40,7 +40,7 @@
   position: absolute;
   top: 60px; /* Adjust this value as needed to position below the header */
   right: 20px;
-  background-color: #282c34;
+  background-color: black;
   padding: 10px;
   border-radius: 4px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
