@@ -24,15 +24,15 @@ const About = () => {
       }}
     >
       <Grid item xs={6} sx={{ flex: 1, textAlign: 'center' }}>
-        <Typography variant="h4" component="h1" sx={{ fontFamily: "'Dancing Script', cursive", textDecoration: 'underline', padding: '40px 0 40px 0' }}>
-          Hey, I'm Chris!
+        <Typography variant="h3" component="h1" sx={{ fontFamily: "'Dancing Script', cursive", padding: '40px 0 40px 0' }}>
+          Hey, I'm Chris
         </Typography>
-        <Typography variant="h6">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        <Typography variant="body1">
+          I'm currently exploring Senior Healthcare, particularly working on the language barrier that can exist between caregivers (Spanish) and seniors (English) in the US. I'm a jack of all trades, with a background in engineering, data, and product, and I'm building my sales skills too. I've been working in startups (with a stint at Twitter for a bit) for the past 6 years. Before that, I studied Economics and Psychology at Yale, where I was also a 2x All-American and 1x National Champion in Men's Lacrosse. Hit me up to chat about Senior Care / AgeTech!
         </Typography>
       </Grid>
       <Grid item xs={1}></Grid>
-      <Grid xs={2} item sx={{ flex: 1, textAlign: 'center' }}>
+      <Grid item xs={4} sx={{ flex: 1, textAlign: 'center' }}>
         <Avatar
           src={headshot}
           alt="Chris Keating"
@@ -48,49 +48,6 @@ const About = () => {
       </Grid>
     </Grid>
   ) : (
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <Grid
       container
       sx={{
@@ -104,20 +61,20 @@ const About = () => {
         flexDirection: isMobile ? 'column' : 'row',
       }}
     >
-      <Grid item xs={10} sx={{ flex: 1, textAlign: 'center' }}>
+            <Grid item xs={10} sx={{ flex: 1, textAlign: 'center' }}>
         <Typography variant="h4" component="h1" sx={{ fontFamily: "'Dancing Script', cursive", textDecoration: 'underline' }}>
           Hey, I'm Chris!
         </Typography>
         <Typography variant="body1">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          I'm currently exploring Senior Healthcare, particularly working on the language barrier that can exist between caregivers (Spanish) and seniors (English) in the US. I'm a jack of all trades, with a background in engineering, data, and product, and I'm building my sales skills too. I've been working in startups (with a stint at Twitter for a bit) for the past 6 years. Before that, I studied Economics and Psychology at Yale, where I was also a 2x All-American and 1x National Champion in Men's Lacrosse. Hit me up to chat about Senior Care / AgeTech!
         </Typography>
       </Grid>
     </Grid>
+    )
+  )
   )
 
-  )
-  );
-
-};
+} 
 
 export default About;
+

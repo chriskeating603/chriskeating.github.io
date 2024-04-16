@@ -36,7 +36,7 @@ function Header () {
           },
         }}>
           <Button sx={{ color: 'white', fontWeight: 'bold', fontSize: '.75rem', backgroundColor: 'black' }}>About</Button>
-          <Button sx={{ color: 'white', fontWeight: 'bold', fontSize: '.75rem', backgroundColor: 'black' }}>Past Work</Button>
+          <Button sx={{ color: 'white', fontWeight: 'bold', fontSize: '.75rem', backgroundColor: 'black' }}>Chris AI</Button>
           <Button sx={{ color: 'white', fontWeight: 'bold', fontSize: '.75rem', backgroundColor: 'black' }}>Contact</Button>
         </ButtonGroup>
         </Toolbar>
@@ -66,7 +66,7 @@ function Header () {
             },
           }}>
             <Button sx={{ color: 'white', fontWeight: 'bold', fontSize: '.75rem', backgroundColor: 'black' }}>About</Button>
-            <Button sx={{ color: 'white', fontWeight: 'bold', fontSize: '.75rem', backgroundColor: 'black' }}>Past Work</Button>
+            <Button sx={{ color: 'white', fontWeight: 'bold', fontSize: '.75rem', backgroundColor: 'black' }}>Chris AI</Button>
             <Button sx={{ color: 'white', fontWeight: 'bold', fontSize: '.75rem', backgroundColor: 'black' }}>Contact</Button>
           </ButtonGroup>
         </Toolbar>

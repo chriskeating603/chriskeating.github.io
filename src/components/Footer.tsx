@@ -23,7 +23,6 @@ const Footer = () => {
           backgroundColor: 'black',
           color: 'white',
           padding: '20px',
-          gap: '10px', // Adjust the gap between items as needed
         }}
       >
         <Typography variant="h6" component="h1">
@@ -35,7 +34,6 @@ const Footer = () => {
             flexDirection: 'row',
             alignItems: 'center',
             justifyContent: 'center',
-            gap: '20px', // Adjust the gap between icons as needed
           }}
         >
           <IconButton aria-label="GitHub" sx={{ color: 'white' }}>
