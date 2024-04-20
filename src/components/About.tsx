@@ -34,7 +34,7 @@ const About = () => {
       <Grid item xs={1}></Grid>
       <Grid item xs={3} sx={{ flex: 1, textAlign: 'center' }}>
         <Avatar
-          src={'https://github.com/chriskeating603/chriskeating603.github.io/blob/gh-pages/src/assets/images/portrait_square_artsy.jpg'}
+          src={'https://github.com/chriskeating603/chriskeating603.github.io/blob/gh-pages/src/assets/images/portrait_square_artsy.jpg?raw=true'}
           alt="Chris Keating"
 
           sx={{

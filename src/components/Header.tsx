@@ -1,6 +1,5 @@
  import { LinkedIn, GitHub, Email, Menu as MenuIcon } from '@mui/icons-material';
  import { IconButton, Button, Unstable_Grid2 as Grid, Typography, AppBar, Toolbar, ButtonGroup, useScrollTrigger, Slide, useMediaQuery, useTheme, Avatar, Box } from '@mui/material';
-//  import portrait from '../assets/images/portrait_square_artsy.jpg';
  import React, { useState, useEffect } from 'react';
 
  function Header({ aboutRef, chrisAIRef, writingsProjectsRef }) {
@@ -16,7 +15,7 @@
     {isMobile ? (
         <AppBar sx={{ backgroundColor: 'black' }}>
         <Toolbar sx={{ alignItems: 'center', justifyContent: 'flex-start' }}>
-        <Avatar src={'https://github.com/chriskeating603/chriskeating603.github.io/blob/gh-pages/src/assets/images/portrait_square_artsy.jpg'} alt="Chris Keating" sx={{ height: '35px', width: '35px', borderRadius: '50%', marginLeft: 2  }}/>
+        <Avatar src={'https://github.com/chriskeating603/chriskeating603.github.io/blob/gh-pages/src/assets/images/portrait_square_artsy.jpg?raw=true'} alt="Chris Keating" sx={{ height: '35px', width: '35px', borderRadius: '50%', marginLeft: 2  }}/>
         <ButtonGroup disableElevation variant="contained" aria-label="Basic button group" sx={{ 
           display: 'flex', 
           justifyContent: 'center', 
