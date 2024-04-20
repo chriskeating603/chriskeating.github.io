@@ -111,6 +111,10 @@ const Logo = styled('img')({
   height: 30, // Adjust size as needed
 });
 
+const GrayscaleCardMedia = styled(CardMedia)({
+  filter: 'grayscale(100%)', // Apply grayscale filter
+});
+
 const Personal = () => {
   return (
     <Container maxWidth="lg" sx={{ width: '80%', margin: 'auto' }}>
@@ -128,7 +132,7 @@ const Personal = () => {
             <Grid item xs={12} sm={6} md={4} lg={3} key={article.id}>
               <CardActionArea href={article.link} target="_blank" rel="noopener noreferrer" style={{ height: '100%' }}>
                 <HoverCard>
-                  <CardMedia
+                  <GrayscaleCardMedia
                     component="img"
                     image={article.imageUrl}
                     alt={article.title}

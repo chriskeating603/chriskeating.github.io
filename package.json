@@ -17,10 +17,12 @@
     "react-slick": "^0.30.2",
     "slick-carousel": "^1.8.1",
     "web-vitals": "^2.1.4",
-    "react-app-rewired": "^2.2.1"
+    "react-app-rewired": "^2.2.1", 
+    "serve": "^11.3.2"
   },
   "scripts": {
-    "start": "react-app-rewired start",
+    "start": "serve -s build",
+    "heroku-postbuild": "npm run build",
     "build": "react-app-rewired build",
     "test": "react-app-rewired test",
     "eject": "react-scripts eject"
@@ -45,7 +47,9 @@
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
-    "react-app-rewired": "^2.2.1"
+  }, 
+  "engines": {
+    "node": "14.x",
+    "npm": "6.x"
   }
 }
-
