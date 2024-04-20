@@ -37,14 +37,14 @@ function Header () {
         }}>
           <Button sx={{ color: 'white', fontWeight: 'bold', fontSize: '.75rem', backgroundColor: 'black' }}>About</Button>
           <Button sx={{ color: 'white', fontWeight: 'bold', fontSize: '.75rem', backgroundColor: 'black' }}>Chris AI</Button>
-          <Button sx={{ color: 'white', fontWeight: 'bold', fontSize: '.75rem', backgroundColor: 'black' }}>Contact</Button>
+          <Button sx={{ color: 'white', fontWeight: 'bold', fontSize: '.75rem', backgroundColor: 'black' }}>Writing</Button>
         </ButtonGroup>
         </Toolbar>
         </AppBar>
             ) : (
           <AppBar sx={{ backgroundColor: 'black' }}>
           <Toolbar sx={{ alignItems: 'center', justifyContent: 'flex-start' }}>
-          <Typography variant="h6" sx={{ color: 'white', fontWeight: 'bold', fontSize: '2rem', marginLeft: 2 }}> {/* Added margin to the left */}
+          <Typography variant="h6" sx={{ color: 'white', fontFamily: "'Courier New', monospace", fontWeight: 'bold', fontSize: '2rem', marginLeft: 2 }}> {/* Added margin to the left */}
             Chris Keating
           </Typography>
           <ButtonGroup disableElevation variant="contained" aria-label="Basic button group" sx={{ 
@@ -65,9 +65,9 @@ function Header () {
               borderLeft: '1px solid white', // Left border for all but first button
             },
           }}>
-            <Button sx={{ color: 'white', fontWeight: 'bold', fontSize: '.75rem', backgroundColor: 'black' }}>About</Button>
-            <Button sx={{ color: 'white', fontWeight: 'bold', fontSize: '.75rem', backgroundColor: 'black' }}>Chris AI</Button>
-            <Button sx={{ color: 'white', fontWeight: 'bold', fontSize: '.75rem', backgroundColor: 'black' }}>Contact</Button>
+            <Button sx={{ color: 'white', fontFamily: "'Courier New', monospace", fontWeight: 'bold', fontSize: '.75rem', backgroundColor: 'black' }}>About</Button>
+            <Button sx={{ color: 'white', fontFamily: "'Courier New', monospace", fontWeight: 'bold', fontSize: '.75rem', backgroundColor: 'black' }}>Chris AI</Button>
+            <Button sx={{ color: 'white', fontFamily: "'Courier New', monospace", fontWeight: 'bold', fontSize: '.75rem', backgroundColor: 'black' }}>Writing</Button>
           </ButtonGroup>
         </Toolbar>
       </AppBar>
