@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import './App.css';
 import { LinkedIn, GitHub, Email } from '@mui/icons-material';
 import { IconButton, Button, Unstable_Grid2 as Grid, Typography, AppBar, Toolbar, ButtonGroup, useScrollTrigger, Slide, useMediaQuery, useTheme, Avatar, Box } from '@mui/material';
@@ -11,6 +11,9 @@ import Footer from './components/Footer.tsx';
 function App() {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
+  const aboutRef = useRef(null);
+  const chrisAIRef = useRef(null);
+  const writingsProjectsRef = useRef(null);
 
   return (
     !isMobile ? (
@@ -23,18 +26,18 @@ function App() {
         style={{ minHeight: '100vh', minWidth: '80vw' }} // Ensure full viewport height and width
       >
         <Grid item  sx={{ width: '100%', display: 'flex', justifyContent: 'center', marginRight: 'auto', marginLeft: 'auto'}}>
-          <Header />
+          <Header aboutRef={aboutRef} chrisAIRef={chrisAIRef} writingsProjectsRef={writingsProjectsRef} />        
         </Grid>
-        <Grid item sx={{ width: '80%', display: 'flex', justifyContent: 'center', marginRight: 'auto', marginLeft: 'auto'}}>
-          <About />
-        </Grid>
-        <Grid item sx={{ width: '80%', display: 'flex', justifyContent: 'center', marginRight: 'auto', marginLeft: 'auto', margin: '3% 0 3% 0'}}></Grid>
-        <Grid item sx={{ width: '80%', display: 'flex', justifyContent: 'center', marginRight: 'auto', marginLeft: 'auto'}}>
-          <ChrisAI />
+        <Grid ref={aboutRef} item sx={{ width: '80%', display: 'flex', justifyContent: 'center', marginRight: 'auto', marginLeft: 'auto'}}>
+          <About aboutRef={aboutRef} />
         </Grid>
         <Grid item sx={{ width: '80%', display: 'flex', justifyContent: 'center', marginRight: 'auto', marginLeft: 'auto', margin: '3% 0 3% 0'}}></Grid>
-        <Grid item sx={{ width: '80%', display: 'flex', justifyContent: 'center', marginRight: 'auto', marginLeft: 'auto'}}>
-          <WritingsProjects />
+        <Grid item ref={chrisAIRef} sx={{ width: '80%', display: 'flex', justifyContent: 'center', marginRight: 'auto', marginLeft: 'auto'}}>
+          <ChrisAI chrisAIRef={chrisAIRef} />
+        </Grid>
+        <Grid item sx={{ width: '80%', display: 'flex', justifyContent: 'center', marginRight: 'auto', marginLeft: 'auto', margin: '3% 0 3% 0'}}></Grid>
+        <Grid item ref={writingsProjectsRef} sx={{ width: '80%', display: 'flex', justifyContent: 'center', marginRight: 'auto', marginLeft: 'auto'}}>
+          <WritingsProjects writingsProjectsRef={writingsProjectsRef} />
         </Grid>
         <Grid item sx={{ width: '80%', display: 'flex', justifyContent: 'center', marginRight: 'auto', marginLeft: 'auto', margin: '3% 0 3% 0'}}></Grid>
         <Grid item sx={{ width: '100%', display: 'flex', justifyContent: 'center', marginRight: 'auto', marginLeft: 'auto'}}>

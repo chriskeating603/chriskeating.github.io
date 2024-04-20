@@ -1,35 +1,3 @@
-// const articles: Article[] = [
-//   {
-//     id: '1',
-//     title: 'Article Title 1',
-//     subtitle: 'Article Subtitle 1',
-//     link: 'https://link-to-article-1.com',
-//     imageUrl: 'path/to/image1.jpg',
-//   },
-//   {
-//     id: '2',
-//     title: 'Article Title 2',
-//     subtitle: 'Article Subtitle 2',
-//     link: 'https://github.com/chriskeating603/',
-//     imageUrl: 'path/to/image1.jpg',
-//   },
-//   {
-//     id: '3',
-//     title: 'Article Title 3',
-//     subtitle: 'Article Subtitle 3',
-//     link: 'https://link-to-article-1.com',
-//     imageUrl: 'path/to/image1.jpg',
-//   },
-//   {
-//     id: '4',
-//     title: 'Article Title 4',
-//     subtitle: 'Article Subtitle 4',
-//     link: 'https://github.com/chriskeating603/',
-//     imageUrl: 'path/to/image1.jpg',
-//   },
-//   // Add more articles as needed
-// ];
-
 import React from 'react';
 import { Box, Card, CardActionArea, Typography, Grid, CardMedia, Container } from '@mui/material';
 import { styled } from '@mui/material/styles';

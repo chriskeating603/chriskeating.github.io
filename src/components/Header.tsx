@@ -1,9 +1,9 @@
  import { LinkedIn, GitHub, Email, Menu as MenuIcon } from '@mui/icons-material';
  import { IconButton, Button, Unstable_Grid2 as Grid, Typography, AppBar, Toolbar, ButtonGroup, useScrollTrigger, Slide, useMediaQuery, useTheme, Avatar, Box } from '@mui/material';
- import portrait from '../assets/images/portrait_square_artsy.jpg';
+//  import portrait from '../assets/images/portrait_square_artsy.jpg';
  import React, { useState, useEffect } from 'react';
 
-function Header () {
+ function Header({ aboutRef, chrisAIRef, writingsProjectsRef }) {
     const [menuOpen, setMenuOpen] = useState(false);
     const theme = useTheme();
     const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
@@ -16,7 +16,7 @@ function Header () {
     {isMobile ? (
         <AppBar sx={{ backgroundColor: 'black' }}>
         <Toolbar sx={{ alignItems: 'center', justifyContent: 'flex-start' }}>
-        <Avatar src={portrait} alt="Chris Keating" sx={{ height: '35px', width: '35px', borderRadius: '50%', marginLeft: 2  }}/>
+        <Avatar src={'https://github.com/chriskeating603/chriskeating603.github.io/blob/gh-pages/src/assets/images/portrait_square_artsy.jpg?raw=true'} alt="Chris Keating" sx={{ height: '35px', width: '35px', borderRadius: '50%', marginLeft: 2  }}/>
         <ButtonGroup disableElevation variant="contained" aria-label="Basic button group" sx={{ 
           display: 'flex', 
           justifyContent: 'center', 
@@ -35,9 +35,9 @@ function Header () {
             borderLeft: '1px solid white', // Left border for all but first button
           },
         }}>
-          <Button sx={{ color: 'white', fontWeight: 'bold', fontSize: '.75rem', backgroundColor: 'black' }}>About</Button>
-          <Button sx={{ color: 'white', fontWeight: 'bold', fontSize: '.75rem', backgroundColor: 'black' }}>Chris AI</Button>
-          <Button sx={{ color: 'white', fontWeight: 'bold', fontSize: '.75rem', backgroundColor: 'black' }}>Writing</Button>
+             <Button onClick={() => aboutRef.current.scrollIntoView({ behavior: 'smooth' })}>About</Button>
+   <Button onClick={() => chrisAIRef.current.scrollIntoView({ behavior: 'smooth' })}>Chris AI</Button>
+   <Button onClick={() => writingsProjectsRef.current.scrollIntoView({ behavior: 'smooth' })}>Writing</Button>
         </ButtonGroup>
         </Toolbar>
         </AppBar>
