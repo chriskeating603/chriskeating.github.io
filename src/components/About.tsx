@@ -28,7 +28,7 @@ const About = () => {
           Hey, I'm Chris
         </Typography>
         <Typography variant="body1" sx={{ fontFamily: "'Courier New', monospace", padding: '20px 0 40px 0' }}>
-          I'm currently exploring Senior Healthcare, particularly working on the language barrier that can exist between Spanish-speaking caregivers and English-speaking seniors in the US. I've done data, engineering, and product, and I'm now building my sales skills too. I've been working in startups (with a stint at Twitter for a bit) for the past 6 years. Before that, I studied Economics and Psychology at Yale, where I was also a 2x All-American and 1x National Champion in Men's Lacrosse. Hit me up to chat about Senior Care / AgeTech!
+          I'm currently exploring Senior Healthcare, particularly working on the language barrier that can exist between Spanish-speaking caregivers and English-speaking seniors in the US. I'm also excited to work on solving loneliness in seniors. I've worked in data, engineering, and product, and I'm now building my sales skills too. I've worked in startups (with a stint at Twitter for a bit) for the past 6 years. Before that, I studied Economics and Psychology at Yale, where I also played D1 lacrosse and was a 2x All-American and 1x National Champion. Hit me up to chat about Senior Care / AgeTech!
         </Typography>
       </Grid>
       <Grid item xs={1}></Grid>
