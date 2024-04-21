@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/chris-keating-co/static/css/main.c2c62b84.css",
-    "main.js": "/chris-keating-co/static/js/main.5d835c45.js",
+    "main.js": "/chris-keating-co/static/js/main.43945479.js",
     "static/js/453.8f3009cc.chunk.js": "/chris-keating-co/static/js/453.8f3009cc.chunk.js",
     "static/media/portrait_square_artsy.jpg": "/chris-keating-co/static/media/portrait_square_artsy.c0c5ee382fe5bb20a394.jpg",
     "index.html": "/chris-keating-co/index.html",
     "static/media/githubLogo.svg": "/chris-keating-co/static/media/githubLogo.83888a7ba36d44553c1f02d7f43fa6e8.svg",
     "static/media/penPaperLogo.svg": "/chris-keating-co/static/media/penPaperLogo.24324a4d42252ec1faff82a74ec30beb.svg",
     "main.c2c62b84.css.map": "/chris-keating-co/static/css/main.c2c62b84.css.map",
-    "main.5d835c45.js.map": "/chris-keating-co/static/js/main.5d835c45.js.map",
+    "main.43945479.js.map": "/chris-keating-co/static/js/main.43945479.js.map",
     "453.8f3009cc.chunk.js.map": "/chris-keating-co/static/js/453.8f3009cc.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c2c62b84.css",
-    "static/js/main.5d835c45.js"
+    "static/js/main.43945479.js"
   ]
 }
