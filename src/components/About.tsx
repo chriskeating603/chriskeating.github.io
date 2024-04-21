@@ -2,6 +2,7 @@ import React from 'react';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import { useTheme, useMediaQuery, Grid, Avatar } from '@mui/material';
+import pic from '../assets/images/portrait_square_artsy.jpg';
 
 const About = () => {
   const theme = useTheme();
@@ -33,7 +34,7 @@ const About = () => {
       <Grid item xs={1}></Grid>
       <Grid item xs={3} sx={{ flex: 1, textAlign: 'center' }}>
         <Avatar
-          src={'https://github.com/chriskeating603/chriskeating603.github.io/blob/29bd2ff8c85ad574f76ed10548df99b1de397ae1/src/assets/images/portrait_square_artsy.jpg'}
+          src={pic}
           alt="Chris Keating"
 
           sx={{
