@@ -14,13 +14,13 @@ const Footer = () => {
           flexDirection: 'column',
           alignItems: 'center',
           justifyContent: 'center',
-          backgroundColor: 'black',
+          backgroundColor: '#00356b',
           color: 'white',
           padding: '1% 0 1% 0',
           width: '100%',
         }}
       >
-        <Typography variant="h6" component="h1" sx={{ fontFamily: "'Courier New', monospace" }}>
+        <Typography variant="h6" component="h1" sx={{ fontFamily: "'Helvetica Neue', monospace" }}>
           Chris Keating 2024
         </Typography>
         <Box

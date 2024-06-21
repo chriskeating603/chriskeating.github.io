@@ -14,7 +14,7 @@
   return (
     <Box>
     {isMobile ? (
-        <AppBar sx={{ backgroundColor: 'black' }}>
+        <AppBar sx={{ backgroundColor: '#00356b' }}>
         <Toolbar sx={{ alignItems: 'center', justifyContent: 'flex-start' }}>
         <Avatar src={pic} alt="Chris Keating" sx={{ height: '35px', width: '35px', borderRadius: '50%', marginLeft: 2  }}/>
         <ButtonGroup disableElevation variant="contained" aria-label="Basic button group" sx={{ 
@@ -26,7 +26,7 @@
             color: 'white', 
             fontWeight: 'bold', 
             fontSize: '.75rem', 
-            backgroundColor: 'black',
+            backgroundColor: '#00356b',
             '&:not(:last-child)': {
               borderRight: '1px solid white', // Right border for all but last button
             },
@@ -42,9 +42,9 @@
         </Toolbar>
         </AppBar>
             ) : (
-          <AppBar sx={{ backgroundColor: 'black' }}>
+          <AppBar sx={{ backgroundColor: '#00356b' }}>
           <Toolbar sx={{ alignItems: 'center', justifyContent: 'flex-start' }}>
-          <Typography variant="h6" sx={{ color: 'white', fontFamily: "'Courier New', monospace", fontWeight: 'bold', fontSize: '2rem', marginLeft: 2 }}> {/* Added margin to the left */}
+          <Typography variant="h6" sx={{ color: 'white', fontFamily: "'Helvetica Neue', monospace", fontWeight: 'bold', fontSize: '2rem', marginLeft: 2 }}> {/* Added margin to the left */}
             Chris Keating
           </Typography>
           <ButtonGroup disableElevation variant="contained" aria-label="Basic button group" sx={{ 
@@ -56,7 +56,7 @@
               color: 'white', 
               fontWeight: 'bold', 
               fontSize: '1.1rem', 
-              backgroundColor: 'black',
+              backgroundColor: '#00356b',
               '&:not(:last-child)': {
                 borderRight: '1px solid white', // Right border for all but last button
               },
@@ -65,9 +65,9 @@
               borderLeft: '1px solid white', // Left border for all but first button
             },
           }}>
-            <Button sx={{ color: 'white', fontFamily: "'Courier New', monospace", fontWeight: 'bold', fontSize: '.75rem', backgroundColor: 'black' }}>About</Button>
-            <Button sx={{ color: 'white', fontFamily: "'Courier New', monospace", fontWeight: 'bold', fontSize: '.75rem', backgroundColor: 'black' }}>Chris AI</Button>
-            <Button sx={{ color: 'white', fontFamily: "'Courier New', monospace", fontWeight: 'bold', fontSize: '.75rem', backgroundColor: 'black' }}>Writing</Button>
+            <Button sx={{ color: 'white', fontFamily: "'Helvetica Neue', monospace", fontWeight: 'bold', fontSize: '.75rem', backgroundColor: '#00356b' }}>About</Button>
+            <Button sx={{ color: 'white', fontFamily: "'Helvetica Neue', monospace", fontWeight: 'bold', fontSize: '.75rem', backgroundColor: '#00356b' }}>Chris AI</Button>
+            <Button sx={{ color: 'white', fontFamily: "'Helvetica Neue', monospace", fontWeight: 'bold', fontSize: '.75rem', backgroundColor: '#00356b' }}>Writing</Button>
           </ButtonGroup>
         </Toolbar>
       </AppBar>

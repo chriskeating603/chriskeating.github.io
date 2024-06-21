@@ -101,10 +101,10 @@ const Personal = () => {
       <Box padding={2}>
         <Grid container spacing={2} justifyContent="center">
         <Grid item xs={12} sx={{ flex: 1, textAlign: 'center' }}>
-          <Typography variant="h4" component="h1" sx={{ fontFamily: "'Courier New', monospace", padding: '40px 0 20px 0' }}>
+          <Typography variant="h4" component="h1" sx={{ fontFamily: "'Helvetica Neue', monospace", padding: '40px 0 20px 0' }}>
             Human version
           </Typography>
-          <Typography variant="body1" sx={{ fontFamily: "'Courier New', monospace", padding: '20px 0 40px 0' }}>
+          <Typography variant="body1" sx={{ fontFamily: "'Helvetica Neue', monospace", padding: '20px 0 40px 0' }}>
             Chris also writes for both human (writing) and computer (code) audiences. Check them out here:
           </Typography>
         </Grid>

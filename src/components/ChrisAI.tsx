@@ -9,9 +9,9 @@ interface ConversationEntry {
 
 const styles = {
   terminal: {
-    backgroundColor: '#1e1e1e',
+    backgroundColor: '#978d85',
     color: '#ffffff',
-    fontFamily: "'Courier New', monospace",
+    fontFamily: "'Helvetica Neue', monospace",
     // padding: '10px',
     leftPadding: '10px',
     borderRadius: '10px',
@@ -38,7 +38,7 @@ const styles = {
     background: 'transparent',
     border: 'none',
     color: '#ffffff',
-    fontFamily: "'Courier New', monospace",
+    fontFamily: "'Helvetica Neue', monospace",
     fontSize: '16px',
     outline: 'none',
     caretColor: 'transparent', // Hide the default cursor
@@ -110,10 +110,10 @@ function ChrisAI() {
     <Box>
       <Grid container direction="column">
         <Grid item xs={12} sx={{ flex: 1, textAlign: 'center' }}>
-          <Typography variant="h4" component="h1" sx={{ fontFamily: "'Courier New', monospace", padding: '40px 0 20px 0' }}>
+          <Typography variant="h4" component="h1" sx={{ fontFamily: "'Helvetica Neue', monospace", padding: '40px 0 20px 0' }}>
             Bot version
           </Typography>
-          <Typography variant="body1" sx={{ fontFamily: "'Courier New', monospace", padding: '20px 0 40px 0' }}>
+          <Typography variant="body1" sx={{ fontFamily: "'Helvetica Neue', monospace", padding: '20px 0 40px 0' }}>
             This bot knows some interesting info about Chris - you can ask about his career, education, personal life, or anything else!
           </Typography>
         </Grid>
