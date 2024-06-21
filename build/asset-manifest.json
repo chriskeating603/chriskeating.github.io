@@ -1,16 +1,15 @@
 {
   "files": {
-    "main.css": "/chris-keating-co/static/css/main.c2c62b84.css",
-    "main.js": "/chris-keating-co/static/js/main.7702d57b.js",
+    "main.css": "/chris-keating-co/static/css/main.cbdbec42.css",
+    "main.js": "/chris-keating-co/static/js/main.e8b51de9.js",
     "static/js/453.8f3009cc.chunk.js": "/chris-keating-co/static/js/453.8f3009cc.chunk.js",
-    "static/media/portrait_square_artsy.jpg": "/chris-keating-co/static/media/portrait_square_artsy.c0c5ee382fe5bb20a394.jpg",
     "index.html": "/chris-keating-co/index.html",
-    "main.c2c62b84.css.map": "/chris-keating-co/static/css/main.c2c62b84.css.map",
-    "main.7702d57b.js.map": "/chris-keating-co/static/js/main.7702d57b.js.map",
+    "main.cbdbec42.css.map": "/chris-keating-co/static/css/main.cbdbec42.css.map",
+    "main.e8b51de9.js.map": "/chris-keating-co/static/js/main.e8b51de9.js.map",
     "453.8f3009cc.chunk.js.map": "/chris-keating-co/static/js/453.8f3009cc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c2c62b84.css",
-    "static/js/main.7702d57b.js"
+    "static/css/main.cbdbec42.css",
+    "static/js/main.e8b51de9.js"
   ]
 }
