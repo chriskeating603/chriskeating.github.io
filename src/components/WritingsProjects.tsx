@@ -16,13 +16,13 @@ type Article = {
 };
 
 const articles: Article[] = [
-  {
-    id: '1',
-    title: '[Article] Why Senior Loneliness Matters',
-    subtitle: 'It’s a large problem in US, for many reasons — but it is a problem we can solve, together',
-    link: 'https://chriskeating603.medium.com/why-senior-loneliness-matters-154b94343465',
-    imageUrl: 'https://ckeatingnh-images.s3.us-east-2.amazonaws.com/senior_alone_square.jpeg',
-  },
+  // {
+  //   id: '1',
+  //   title: '[Article] Why Senior Loneliness Matters',
+  //   subtitle: 'It’s a large problem in US, for many reasons — but it is a problem we can solve, together',
+  //   link: 'https://chriskeating603.medium.com/why-senior-loneliness-matters-154b94343465',
+  //   imageUrl: 'https://ckeatingnh-images.s3.us-east-2.amazonaws.com/senior_alone_square.jpeg',
+  // },
   
   {
     id: '2',
@@ -92,19 +92,19 @@ const Logo = styled('img')({
 });
 
 const GrayscaleCardMedia = styled(CardMedia)({
-  filter: 'grayscale(100%)', // Apply grayscale filter
+//   filter: 'grayscale(100%)', // Apply grayscale filter
 });
 
 const Personal = () => {
   return (
-    <Container maxWidth="lg" sx={{ width: '80%', margin: 'auto' }}>
+    <Container maxWidth="lg" sx={{ width: '100%', margin: 'auto' }}>
       <Box padding={2}>
         <Grid container spacing={2} justifyContent="center">
         <Grid item xs={12} sx={{ flex: 1, textAlign: 'center' }}>
-          <Typography variant="h4" component="h1" sx={{ fontFamily: "'Helvetica Neue', monospace", padding: '40px 0 20px 0' }}>
+          <Typography variant="h4" component="h1" sx={{ fontFamily: "'Helvetica Neue', monospace", padding: '40px 0 20px 0', color: '#00356b' }}>
             Human version
           </Typography>
-          <Typography variant="body1" sx={{ fontFamily: "'Helvetica Neue', monospace", padding: '20px 0 40px 0' }}>
+          <Typography variant="body1" sx={{ fontFamily: "'Helvetica Neue', monospace", padding: '20px 0 40px 0', color: '#00356b' }}>
             Chris also writes for both human (writing) and computer (code) audiences. Check them out here:
           </Typography>
         </Grid>

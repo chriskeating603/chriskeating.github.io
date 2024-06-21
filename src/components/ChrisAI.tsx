@@ -11,7 +11,7 @@ const styles = {
   terminal: {
     backgroundColor: '#978d85',
     color: '#ffffff',
-    fontFamily: "'Helvetica Neue', monospace",
+    fontFamily: "'Courier New', monospace",
     // padding: '10px',
     leftPadding: '10px',
     borderRadius: '10px',
@@ -22,7 +22,7 @@ const styles = {
     alignItems: 'center',
   },
   terminalWindow: {
-    // maxWidth: '800px',
+    maxWidth: '800px',
     margin: '0 auto',
     padding: '20px',
   },
@@ -38,19 +38,11 @@ const styles = {
     background: 'transparent',
     border: 'none',
     color: '#ffffff',
-    fontFamily: "'Helvetica Neue', monospace",
+    fontFamily: "'Courier New', monospace",
     fontSize: '16px',
     outline: 'none',
-    caretColor: 'transparent', // Hide the default cursor
     padding: '0',
     width: '100%',
-  },
-  blockCursor: {
-    display: 'inline-block',
-    width: '10px',
-    height: '16px',
-    backgroundColor: '#ffffff',
-    animation: 'blink 1s step-end infinite'
   },
   conversationHistory: {
     marginTop: '20px',
@@ -59,7 +51,7 @@ const styles = {
     padding: '8px',
     marginBottom: '10px',
     borderRadius: '4px',
-    backgroundColor: '#252526',
+    // backgroundColor: '#252526',
   },
   user: {
     textAlign: 'left',
@@ -110,10 +102,10 @@ function ChrisAI() {
     <Box>
       <Grid container direction="column">
         <Grid item xs={12} sx={{ flex: 1, textAlign: 'center' }}>
-          <Typography variant="h4" component="h1" sx={{ fontFamily: "'Helvetica Neue', monospace", padding: '40px 0 20px 0' }}>
+          <Typography variant="h4" component="h1" sx={{ fontFamily: "'Helvetica Neue', monospace", padding: '40px 0 20px 0', color: '#00356b' }}>
             Bot version
           </Typography>
-          <Typography variant="body1" sx={{ fontFamily: "'Helvetica Neue', monospace", padding: '20px 0 40px 0' }}>
+          <Typography variant="body1" sx={{ fontFamily: "'Helvetica Neue', monospace", padding: '20px 0 40px 0', color: '#00356b' }}>
             This bot knows some interesting info about Chris - you can ask about his career, education, personal life, or anything else!
           </Typography>
         </Grid>
@@ -126,11 +118,11 @@ function ChrisAI() {
 
                   <div key={index} style={{...styles.message, ...(entry.role === 'user' ? styles.user : styles.historicalFigure)}}>
                     <div style={styles.prompt}></div>
-                    chris_ai % {entry.content}
+                    Random User (you) % {entry.content}
                   </div>
                 ) : (
                   <div key={index} style={{...styles.message, ...(entry.role === 'historicalFigure' ? styles.historicalFigure : styles.user)}}>
-                    {entry.content}
+                    chris_ai % {entry.content}
                   </div>
                 )
                 )
@@ -139,17 +131,19 @@ function ChrisAI() {
               }
               </div>
               <form onSubmit={handleSubmit} style={styles.inputArea}>
-                <div style={styles.prompt}>chris_ai %</div>
+                <div style={styles.prompt}>Random User (you) %</div>
                 {!isMobile ? (
                 <input
                   ref={inputRef}
                   style={styles.inputField}
                   type="text"
                   name="figureName"
-                  placeholder="Query ChrisAI a question about his past experiences"
+                  placeholder="Ask question here..."
                   value={figureName}
                   onChange={(e) => setFigureName(e.target.value)}
-                  autoFocus
+                  autoFocus 
+                  autoComplete="off" // Added autocomplete attribute
+
                 />
                 ) : (
                   <input
@@ -157,13 +151,14 @@ function ChrisAI() {
                   style={styles.inputField}
                   type="text"
                   name="figureName"
-                  placeholder="Query ChrisAI"
+                  placeholder="Ask here..."
                   value={figureName}
                   onChange={(e) => setFigureName(e.target.value)}
                   autoFocus
+                  autoComplete="off" // Added autocomplete attribute
                 />
                 )}
-                {/* <span style={styles.blockCursor}></span>  // This span acts as the block cursor */}
+                {/* <span style={styles.blockCursor}></span> */}
               </form>
             </div>
           </div>
@@ -174,3 +169,4 @@ function ChrisAI() {
 }
 
 export default ChrisAI;
+

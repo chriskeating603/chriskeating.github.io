@@ -1,3 +1,12 @@
+Done
+- Top left logo
+- Link top right buttons to each section
+- update color "email me"
+- fonts/colors for bot 
+- remove black and white filter on images
+- way more context for Chris Bot
+- upload image to AWS and get that shit to work
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
